@@ -1,0 +1,21 @@
+1)Consider first element as sorted array.(always consider left part of the current element as as sorted and right to it as unsorted)
+2)pick next element(from unsorted array).
+3)Compare with elements in sorted array.
+4)shift all elements in sorted array array which are greater that the value of current element.
+5)insert the value.
+6)Repeat until all the elements are sorted.
+
+int inSort(int a[], int n)
+{
+  int i,j,current;
+  for(i=1;i<n;i++)
+	{
+		current=a[i];
+		j=i-1;
+		while(j>=0 && a[j]>current)
+		{	
+			a[j+1]=a[j];
+			j--;
+		}
+		a[j+1]=current;
+	}  

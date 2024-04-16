@@ -1,0 +1,5 @@
+no assignments for day3.
+introduced about git hub.
+explained about how to create repositary in github.
+explained how to clone from github to local storage.
+explained how to push files to our repositaries.
