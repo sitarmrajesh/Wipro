@@ -9,7 +9,7 @@ int asort(int *arr,int n)
 int i,j,temp=0;
 for(j=0;j<n;j++)
 {
-    for(i=0;i<n-j-1;i++)
+    for(i=0;i<n-1;i++)
     {
         if(*(arr+i) > *(arr+i+1))
         {
